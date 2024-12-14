@@ -27,7 +27,7 @@ public class UrlRepository : IUrlRepository
     //stores the mapped url object to the inmemory(ie:dbcontext)
     public void CreateUrl(Url url)
     {
-        _context.Url.AddAsync(url);
+        _context.Url.Add(url);
     }
 
     //After url object is added to the context saves the context to the database
